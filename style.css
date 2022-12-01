@@ -1,0 +1,72 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+   
+}
+.main {
+    width:500px;
+    height:600px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px  rgba(0,0, 0, .4);
+   
+}
+.top {
+    width: 100%;
+    height:120px;
+    background-color: lightseagreen;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0 ;
+}
+h3 {
+    margin-bottom: 10px;
+}
+.bottom {
+    width:100%;
+  
+}
+.weekdays {
+    width: 100%;
+    color:white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    margin-top: 20px;
+}
+.weekdays div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.day {
+    width:100%;
+    color: white;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    margin-top: 20px;
+   
+}
+ 
+.day div {
+    width:70px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.day div:hover:not(.empty) {
+    border: 1px solid gainsboro;
+    cursor: pointer;
+}
+
+.today {
+    background-color: aqua;
+}
